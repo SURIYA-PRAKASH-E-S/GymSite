@@ -1,4 +1,3 @@
-```md
 # 🏋️Gym Website - IronForge Fitness Website
 
 IronForge Fitness is a responsive Gym Website homepage built using **HTML5** and **CSS3**. The website showcases the gym's services, trainers, gallery, workout videos, testimonials and a contact form with a modern and user-friendly interface.
@@ -20,12 +19,11 @@ IronForge Fitness is a responsive Gym Website homepage built using **HTML5** and
 ## 🛠️ Technologies Used
 
 - HTML5
-- CSS3
+- CSS
 
 ## 📁 Project Structure
 
 ```
-
 GymSite/
 │
 ├── images/
@@ -33,7 +31,6 @@ GymSite/
 ├── index.html
 ├── style.css
 └── README.md
-
 ```
 
 ## 🚀 How to Run
