@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)),
+    url("./images/p12.png") center/cover fixed no-repeat;
+  line-height: 1.6;
+}
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 6%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
+}
+.logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.nav {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.nav a:hover {
+  color: #ff4040;
+}
+.btn {
+  display: inline-block;
+  background: #e60000;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #fff;
+  color: #e60000;
+}
+.btn-outline {
+  background: transparent;
+  border: 2px solid #fff;
+}
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+}
+.hero-content {
+  max-width: 700px;
+}
+.hero h1 {
+  font-size: 52px;
+}
+.hero span {
+  color: #ff3b3b;
+}
+.hero span:hover{
+    color:blue;
+}
+.hero p {
+  margin: 20px 0;
+}
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin: 25px 0;
+}
+section {
+  padding: 80px 8%;
+}
+h2 {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 40px;
+  color: #ff4040;
+}
+.about p {
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+.about-grid,
+.service-container,
+.why-container,
+.trainer-container,
+.testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+.about-card,
+.service-card,
+.why-card,
+.trainer-card,
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.about-card:hover,
+.service-card:hover,
+.why-card:hover,
+.trainer-card:hover,
+.testimonial-card:hover {
+  transform: translateY(-8px);
+}
+.service-card img,
+.gallery-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+.service-card img {
+  height: 220px;
+  object-fit: cover;
+}
+.trainer-card img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.gallery-container img {
+  height: 220px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+.video-container video {
+  width: 100%;
+  border-radius: 25px;
+}
+.testimonial-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.contact form {
+  max-width: 650px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.contact input,
+.contact textarea {
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.contact textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+footer {
+  background: #000;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* Mobile and desktop responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .nav {
+    justify-content: center;
+  }
+  .hero {
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 38px;
+  }
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
