@@ -41,4 +41,3 @@ GymSite/
 
 ---
 Developed as a front-end web design project for learning HTML and CSS.
----
