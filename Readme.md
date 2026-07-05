@@ -39,6 +39,6 @@ GymSite/
 2. Open the project folder.
 3. Double-click `index.html` or open it using **Live Server** in Visual Studio Code.
 
-
+---
 Developed as a front-end web design project for learning HTML and CSS.
-```
+---
